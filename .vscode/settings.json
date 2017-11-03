@@ -1,0 +1,11 @@
+{
+  "eslint.enable": true,
+
+  "editor.useTabStops": true,
+
+  "emmet.syntaxProfiles": {
+    "javascript": "html"
+  },
+
+  "emmet.triggerExpansionOnTab": true
+}
