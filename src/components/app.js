@@ -1,10 +1,6 @@
-// import { h, Component } from 'preact';
-// import { Router } from 'preact-router';
-
-import style from './style';
-
 import Header from './header';
 import TrackButton from './track-button';
+import Dates from './dates';
 
 // import Home from '../routes/home';
 // export default class App extends Component {
@@ -27,30 +23,11 @@ import TrackButton from './track-button';
 // 	}
 // }
 
-const Days = () => {
-	const days = ['mon', 'tue', 'wen', 'thu', 'fri', 'sat', 'sun'];
-
-	const dates = Array.from(Array(14).keys()).map(d => d + 10).map(d => (
-		<div class={style.date_container}>
-			<span class={style.day}>{days[d % days.length]}</span>
-			<span class={style.date}>{d}</span>
-		</div>
-	));
-
-	return (
-		<div class={style.dates}>
-			{dates}
-		</div>
-	);
-};
-
 const App = () => (
 	<div id="app">
 		<Header />
-		<Days />
-		<div class={style.container}>
-			<TrackButton />
-		</div>
+		<Dates />
+		<TrackButton />
 	</div>
 );
 

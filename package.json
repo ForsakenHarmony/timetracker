@@ -22,8 +22,12 @@
     "preact-cli": "^2.0.2"
   },
   "dependencies": {
+    "babel-plugin-emotion": "^8.0.9",
+    "date-fns": "^1.29.0",
+    "emotion": "^8.0.9",
     "preact": "^8.2.6",
     "preact-compat": "^3.17.0",
+    "preact-emotion": "^8.0.9",
     "preact-router": "^2.5.5"
   }
 }
